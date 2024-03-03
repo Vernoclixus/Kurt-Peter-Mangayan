@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Magnaga Waters Beach Resort</title>
+    <link rel="stylesheet" href="magnaga.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+        <h1 class="head"></h1>
+    </header>
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="room.html">Room Rates</a></li>
+          <li><a class="active" href="reserve.html">Reservations</a></li>
+          <li style="float:right"><a href="about.html">About Us</a></li>
+      </ul>
+  </nav>
+
+  <div class="reservation-form">
+    <form action="submit_reservation.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="check-in">Check-in Date:</label>
+        <input type="date" id="check-in" name="check-in" required>
+
+        <label for="check-out">Check-out Date:</label>
+        <input type="date" id="check-out" name="check-out" required>
+
+        <label for="special-requests">Special Requests:</label>
+        <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+
+        <input type="submit" value="Submit Reservation">
+    </form>
+  </div>
+
+    <footer>
+      <div class="copyright">© 2024. All Rights Reserved.
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
